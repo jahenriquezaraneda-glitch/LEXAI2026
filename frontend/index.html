@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LexAI Pro - Asistente Legal Chileno</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Tailwind Config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              oroclaro: '#D4AF37',
+              orooscuro: '#996515',
+              negromate: '#121212',
+              griscarbono: '#2C2C2C'
+            }
+          }
+        }
+      }
+    </script>
+
+    <!-- Import Maps -->
+        
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Lora:ital,wght@0,400;0,700;1,400&display=swap');
+
+      :root {
+        --oro-claro: #D4AF37;
+        --oro-oscuro: #996515;
+        --negro-mate: #121212;
+        --gris-carbono: #2C2C2C;
+      }
+
+      .lex-app-container {
+        background: linear-gradient(rgba(18, 18, 18, 0.85), rgba(18, 18, 18, 0.95)), 
+               url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=2070');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        min-height: 100vh;
+        color: #E5E5E5;
+        font-family: 'Lora', serif; /* Fuente elegante y legible */
+      }
+
+      .font-titulo {
+        font-family: 'Cinzel', serif; /* Fuente clásica romana para títulos */
+        letter-spacing: 2px;
+      }
+
+      /* Hide scrollbar for clean UI but keep functionality */
+      .scrollbar-hide::-webkit-scrollbar {
+          display: none;
+      }
+      .scrollbar-hide {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+      }
+    </style>
+  </head>
+  <body class="bg-[#121212] text-[#E5E5E5] antialiased selection:bg-[#D4AF37] selection:text-[#121212]">
+    <div id="root"></div>
+    <script type="module" src="./index.tsx"></script>
+  <script type="module" src="/index.js"></script></body>
+</html>
